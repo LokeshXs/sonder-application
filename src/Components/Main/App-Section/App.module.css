@@ -1,0 +1,117 @@
+.AppSection{
+  background-color: #eaece2;
+color: var(--text-color);
+}
+
+.AppSection-Container{
+  margin: 0 auto;
+  margin-top: 6rem;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+padding: 4rem 0;
+align-items: center;
+}
+
+.AppFeatures{
+  width: 40%;
+}
+
+.AppImage{
+  flex: 1;
+}
+
+.AppImage img{
+  width: 100%;
+}
+
+.sectionTitle{
+  font-size: 4rem;
+  text-align: left;
+}
+
+.sectionDescription{
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  font-weight: 400;
+}
+
+.appFeatures{
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(30rem,1fr));
+  row-gap: 2rem;
+}
+
+.appFeatures div{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.appFeatures div p{
+font-size: 1.6rem;
+line-height: 1.5;
+}
+
+.appDownload{
+  display: flex;
+  margin-top: 6rem;
+  gap: 2rem;
+}
+
+.appDownload img{
+  width: 15rem;
+}
+
+.AppImage{
+  width: 100%;
+}
+
+/* RESPONSIVENESS */
+
+@media(max-width:82em){
+  .heroContainer-content div h1 {
+    font-size: 6rem;
+  }
+
+  .AppSection-Container{
+  flex-direction: column-reverse;
+  }
+
+  .AppFeatures{
+    width: 100%;
+  }
+}
+
+
+@media (max-width:48em){
+  .AppSection-Container{
+
+    width: 90vw;
+
+  }
+}
+
+@media (max-width:36em){
+  .appFeatures div p{
+    font-size: 1.4rem;
+    line-height: 1.4;
+    }
+
+    .sectionDescription{
+      font-size: 1.4rem;
+      margin-top: 2rem;
+      font-weight: 400;
+    }
+
+    .sectionTitle{
+      font-size: 2.8rem;
+      text-align: left;
+    }
+
+    .appDownload img{
+      width: 10rem;
+    }
+
+}

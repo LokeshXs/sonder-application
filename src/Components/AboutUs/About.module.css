@@ -1,0 +1,276 @@
+.aboutus-hero-content h1 {
+  font-size: 5rem;
+}
+.aboutus-description{
+  font-size: 2rem;
+}
+
+.aboutus-header {
+  position: relative;
+}
+
+.aboutus-hero {
+  width: 100%;
+  height: 60vh;
+}
+
+.aboutus-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.aboutus-hero-content {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.aboutus-hero-content p,
+.aboutus-hero-content h1 {
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.aboutus-section {
+  margin: 0 auto;
+  width: 80vw;
+  margin-top: 12rem;
+  color: var(--text-color);
+}
+
+.aboutus-section-style1 {
+  display: flex;
+  gap: 12rem;
+  align-items: center;
+}
+
+.aboutus-section-style2 {
+  display: flex;
+  gap: 12rem;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.aboutus-section img {
+  flex: 1;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4rem;
+}
+
+.aboutus-section h2 {
+  color: var(--text-color);
+}
+
+.aboutus-section div {
+  flex: 1;
+
+}
+
+.sectionHeading {
+  font-size: 5rem;
+}
+
+.sectionContent {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.aboutus-img {
+  margin-top: 12rem;
+  height: 60vh;
+}
+
+.aboutus-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.leader-ship-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+
+.leader-ship-section h2 {
+  color: var(--text-color);
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+button {
+  padding: 1.4rem;
+  outline: none;
+  border: none;
+  border-radius: 4rem;
+  font-size: 1.4rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.leader-ship-section button {
+  background-color: var(--text-color);
+  margin-top: 4rem;
+}
+
+.workwithus-container {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #fcf5eb;
+  border-radius: 4rem;
+}
+
+
+
+.workwithus-container img {
+  flex: 1;
+  width: 100%;
+  height: 40rem;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  border-radius: 4rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.workwithus-container-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: start;
+  padding: 4rem;
+}
+
+.workwithus-container-content button {
+  background-color: #f9be25;
+  color: var(--text-color);
+}
+
+
+
+/* RESONSIVENESS */
+
+@media(max-width:78em) {
+  .aboutus-section-style1 {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .aboutus-section-style2 {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-direction: column;
+  }
+
+  .aboutus-section img {
+    flex: 1;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 4rem;
+  }
+}
+
+@media (max-width:48em) {
+
+  .workwithus-container {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fcf5eb;
+    border-radius: 4rem;
+    flex-direction: column-reverse;
+  }
+
+
+  .aboutus-section {
+    margin: 0 auto;
+    width: 90vw;
+    margin-top: 8rem;
+    color: var(--text-color);
+  }
+}
+
+@media (max-width:36em) {
+  .aboutus-hero {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .aboutus-img {
+    margin-top: 12rem;
+    height: 40vh;
+  }
+  .aboutus-hero-content h1 {
+    font-size: 4rem;
+  }
+  .aboutus-description{
+    font-size: 1.4rem;
+  }
+
+  .sectionHeading {
+    font-size: 3rem;
+  }
+  
+  .sectionContent {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+  .leader-ship-section h2 {
+    color: var(--text-color);
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  .leader-ship-section button {
+    background-color: var(--text-color);
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+  .workwithus-container-content button {
+    background-color: #f9be25;
+    color: var(--text-color);
+  }
+  .workwithus-container p {
+  font-size: 1.4rem;
+  }
+  .workwithus-container-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: start;
+    padding: 2rem 4rem;
+    width: 100%;
+  }
+  
+  
+}

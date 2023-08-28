@@ -1,0 +1,60 @@
+.testimonialSection {
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 6rem;
+  color: var(--text-color);
+}
+
+.sectionTitle {
+  font-size: 4rem;
+}
+
+.sectionDescription {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  font-weight: 400;
+}
+
+.author h3 {
+  font-size: 1.4rem;
+  font-weight: 450;
+}
+
+.author p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.mySwiper{
+  margin-top: 6rem;
+  padding: 2rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #28e98c;
+   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); */
+   /* margin-left: -100px; */
+   z-index: 10;
+   /* font-size: 10rem; */
+   text-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
+}
+
+@media (max-width:48em){
+  .testimonialSection {
+    width: 90vw;
+  }
+}
+
+@media (max-width:36em){
+  .sectionTitle {
+    font-size: 2.8rem;
+  }
+  
+  .sectionDescription {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    font-weight: 400;
+  }
+}
