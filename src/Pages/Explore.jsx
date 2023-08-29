@@ -8,6 +8,7 @@ const ExplorePage = () => {
   const [searchParams, setSearchParams] = useSearchParams();
 
   console.log(typeof searchParams.get('page'));
+  const pageNumber = +searchParams.get('page');
 
   const { pictures: imagesData } = useLoaderData();
 
@@ -16,7 +17,7 @@ const ExplorePage = () => {
 
   return <Suspense fallback={<Skeleton variant="rectangular" animation="pulse" sx={{ width: '100%', height: '400px' }} />}>
     <Await resolve={imagesData}>
-      {(loadedImagesData) => <Explore imagesData={loadedImagesData} />}
+      {(loadedImagesData) => <Explore imagesData={loadedImagesData} pageNumber={pageNumber} />}
     </Await>
   </Suspense>
 };

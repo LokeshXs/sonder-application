@@ -3,9 +3,9 @@ import styles from "./Explore.module.css";
 import { useSearchParams } from "react-router-dom";
 import { ArrowBack, ArrowForward } from "@mui/icons-material";
 import { useEffect, useRef, useState } from "react";
-  
 
-const Explore = ({ imagesData }) => {
+
+const Explore = ({ imagesData, pageNumber }) => {
 
   const imgRef = useRef();
   const imgContainerRef = useRef();
@@ -15,6 +15,7 @@ const Explore = ({ imagesData }) => {
   console.log(imagesData);
 
   useEffect(() => {
+    console.log(pageNumber);
 
     window.scrollTo({
       top: 0,
@@ -28,7 +29,7 @@ const Explore = ({ imagesData }) => {
     // imgRef.current.addEventListener('load', loaded);
 
 
-  },[]);
+  }, []);
 
 
 
@@ -43,7 +44,7 @@ const Explore = ({ imagesData }) => {
   };
 
   return <main>
-    <Box sx={{ width: match?'90vw':'80vw', overflowY: 'scroll', margin: '0 auto' }}>
+    <Box sx={{ width: match ? '90vw' : '80vw', overflowY: 'scroll', margin: '0 auto' }}>
       <ImageList variant="masonry" cols={3} gap={8}>
         {imagesData.map((item) => (
           <ImageListItem key={item.id}>
@@ -53,7 +54,7 @@ const Explore = ({ imagesData }) => {
                 alt={item.title}
                 loading="lazy"
                 ref={imgRef}
-                // style={{opacity: imageLoaded ? 1 : 0,transition: 'opacity 0.5s ease-in-out'}}
+              // style={{opacity: imageLoaded ? 1 : 0,transition: 'opacity 0.5s ease-in-out'}}
               />
             </div>
 
@@ -65,11 +66,14 @@ const Explore = ({ imagesData }) => {
       <div className={styles.paginationContainer}>
 
         <Pagination
+
           count={5}
           onChange={handlePageChange}
+          page={pageNumber}
           renderItem={(item) => (
             <PaginationItem
               color="primary"
+              page={pageNumber}
               size="large"
               slots={{ previous: ArrowBack, next: ArrowForward }}
               {...item}

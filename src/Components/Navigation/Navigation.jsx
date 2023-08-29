@@ -25,7 +25,7 @@ const NavigationComponent = () => {
     const headerHeight = headerRef.current.getBoundingClientRect();
 
     window.addEventListener('scroll', function (e) {
-      console.log(this.window.scrollY);
+      // console.log(this.window.scrollY);
       if (this.window.scrollY > headerHeight.height) {
         navRef.current.classList.add(styles.navContainerSticky);
         headerRef.current.style.marginTop = headerHeight + 'px';
