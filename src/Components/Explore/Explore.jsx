@@ -21,11 +21,11 @@ const Explore = ({ imagesData }) => {
       behavior: 'smooth',
     });
 
-    const loaded = () => {
-      setImageLoaded(true);
-      console.log('loaded');
-    };
-    imgRef.current.addEventListener('load', loaded);
+    // const loaded = () => {
+    //   setImageLoaded(true);
+    //   console.log('loaded');
+    // };
+    // imgRef.current.addEventListener('load', loaded);
 
 
   },[]);
@@ -53,7 +53,7 @@ const Explore = ({ imagesData }) => {
                 alt={item.title}
                 loading="lazy"
                 ref={imgRef}
-                style={{opacity: imageLoaded ? 1 : 0,transition: 'opacity 0.5s ease-in-out'}}
+                // style={{opacity: imageLoaded ? 1 : 0,transition: 'opacity 0.5s ease-in-out'}}
               />
             </div>
 
