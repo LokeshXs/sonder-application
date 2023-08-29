@@ -1,7 +1,8 @@
 .aboutus-hero-content h1 {
   font-size: 5rem;
 }
-.aboutus-description{
+
+.aboutus-description {
   font-size: 2rem;
 }
 
@@ -40,6 +41,12 @@
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
 
+.aboutus-section-style1 {
+  display: flex;
+  gap: 12rem;
+  align-items: center;
+}
+
 .aboutus-section {
   margin: 0 auto;
   width: 80vw;
@@ -47,11 +54,7 @@
   color: var(--text-color);
 }
 
-.aboutus-section-style1 {
-  display: flex;
-  gap: 12rem;
-  align-items: center;
-}
+
 
 .aboutus-section-style2 {
   display: flex;
@@ -61,21 +64,21 @@
 }
 
 .aboutus-section img {
-  flex: 1;
-  width: 100%;
+  width: 40%;
   object-fit: cover;
   object-position: center;
   border-radius: 4rem;
+}
+
+.aboutus-section div {
+  
 }
 
 .aboutus-section h2 {
   color: var(--text-color);
 }
 
-.aboutus-section div {
-  flex: 1;
 
-}
 
 .sectionHeading {
   font-size: 5rem;
@@ -188,7 +191,7 @@ button {
   }
 
   .aboutus-section img {
-    flex: 1;
+  
     width: 100%;
     object-fit: cover;
     object-position: center;
@@ -228,40 +231,47 @@ button {
     margin-top: 12rem;
     height: 40vh;
   }
+
   .aboutus-hero-content h1 {
     font-size: 4rem;
   }
-  .aboutus-description{
+
+  .aboutus-description {
     font-size: 1.4rem;
   }
 
   .sectionHeading {
     font-size: 3rem;
   }
-  
+
   .sectionContent {
     margin-top: 2rem;
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.4;
   }
+
   .leader-ship-section h2 {
     color: var(--text-color);
     font-size: 3rem;
     font-weight: 500;
   }
+
   .leader-ship-section button {
     background-color: var(--text-color);
     font-size: 1.2rem;
     margin-top: 2rem;
   }
+
   .workwithus-container-content button {
     background-color: #f9be25;
     color: var(--text-color);
   }
+
   .workwithus-container p {
-  font-size: 1.4rem;
+    font-size: 1.4rem;
   }
+
   .workwithus-container-content {
     display: flex;
     flex: 1;
@@ -271,6 +281,6 @@ button {
     padding: 2rem 4rem;
     width: 100%;
   }
-  
-  
+
+
 }
