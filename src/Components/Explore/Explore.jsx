@@ -46,7 +46,7 @@ const Explore = ({ imagesData }) => {
     <Box sx={{ width: match?'90vw':'80vw', overflowY: 'scroll', margin: '0 auto' }}>
       <ImageList variant="masonry" cols={3} gap={8}>
         {imagesData.map((item) => (
-          <ImageListItem key={item.img}>
+          <ImageListItem key={item.id}>
             <div ref={imgContainerRef} className={styles['blur-loader']} style={{ backgroundImage: `url(${item.urls.raw}&w=2)`, paddingBottom: `${(item.height / item.width) * 100}%` }}>
               <img
                 src={item.urls.small}

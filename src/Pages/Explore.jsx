@@ -23,7 +23,7 @@ const ExplorePage = () => {
 
 async function loadImagesData({ request, params }) {
   const searchParams = new URL(request.url).searchParams;
-  console.log(searchParams.get('page'));
+
   const page = searchParams.get('page');
 
   const response = await fetch(`https://api.unsplash.com/collections/4977823/photos/?per_page=30&page=${page}&client_id=tOi4sBt2CUc4GhVjzbZ_8aaS6hjWcT-R5_z4PjCp-Cs`);
@@ -31,14 +31,11 @@ async function loadImagesData({ request, params }) {
   const data = await response.json();
 
   if (!response.ok) {
-    //later
 
-    // return {isError:true,message:'could not fetch pictures'}
 
     throw new Response(JSON.stringify({ message: 'Could not fetch the pictures' }), { status: 500 });
   }
-  // console.log(response);
-  // console.log(data);
+
 
   return data;
 
